@@ -1,6 +1,3 @@
-import { redirect } from "next/navigation"
-import { cookies } from "next/headers"
-
 import { AppSidebar } from "@/components/app-sidebar"
 import { ChartAreaInteractive } from "@/components/chart-area-interactive"
 import { DataTable } from "@/components/data-table"
@@ -11,16 +8,9 @@ import {
   SidebarProvider,
 } from "@/components/ui/sidebar"
 
-import data from "./dashboard/data.json"
+import data from "./data.json"
 
-export default async function Home() {
-  const cookieStore = await cookies()
-  const token = cookieStore.get("auth-token")
-
-  if (!token) {
-    redirect("/login")
-  }
-
+export default function Page() {
   return (
     <SidebarProvider
       style={

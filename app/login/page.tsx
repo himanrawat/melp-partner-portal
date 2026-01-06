@@ -1,0 +1,20 @@
+import { redirect } from "next/navigation"
+import { cookies } from "next/headers"
+import { LoginForm } from "@/components/login-form"
+
+export default async function LoginPage() {
+  const cookieStore = await cookies()
+  const token = cookieStore.get("auth-token")
+
+  if (token) {
+    redirect("/")
+  }
+
+  return (
+    <div className="bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
+      <div className="w-full max-w-sm">
+        <LoginForm />
+      </div>
+    </div>
+  )
+}
