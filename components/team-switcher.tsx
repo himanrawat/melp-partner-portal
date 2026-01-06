@@ -30,6 +30,8 @@ export function TeamSwitcher({
 }) {
 	const { isMobile } = useSidebar();
 	const [activeTeam, setActiveTeam] = React.useState(teams[0]);
+	const triggerId = "team-switcher-trigger";
+	const contentId = "team-switcher-content";
 
 	if (!activeTeam) {
 		return null;
@@ -39,7 +41,11 @@ export function TeamSwitcher({
 		<SidebarMenu>
 			<SidebarMenuItem>
 				<DropdownMenu>
-					<DropdownMenuTrigger asChild>
+					<DropdownMenuTrigger
+						asChild
+						id={triggerId}
+						aria-controls={contentId}
+					>
 						<SidebarMenuButton
 							size="lg"
 							className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
@@ -55,6 +61,8 @@ export function TeamSwitcher({
 						</SidebarMenuButton>
 					</DropdownMenuTrigger>
 					<DropdownMenuContent
+						id={contentId}
+						aria-labelledby={triggerId}
 						className="w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg"
 						align="start"
 						side={isMobile ? "bottom" : "right"}

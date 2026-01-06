@@ -39,12 +39,14 @@ export function NavUser({
   }
 }) {
   const { isMobile } = useSidebar()
+  const triggerId = "nav-user-trigger"
+  const contentId = "nav-user-content"
 
   return (
     <SidebarMenu>
       <SidebarMenuItem>
         <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+          <DropdownMenuTrigger asChild id={triggerId} aria-controls={contentId}>
             <SidebarMenuButton
               size="lg"
               className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
@@ -63,6 +65,8 @@ export function NavUser({
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent
+            id={contentId}
+            aria-labelledby={triggerId}
             className="w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg"
             side={isMobile ? "bottom" : "right"}
             align="end"
