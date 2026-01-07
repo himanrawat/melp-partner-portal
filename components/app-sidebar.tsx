@@ -2,156 +2,115 @@
 
 import * as React from "react";
 import {
-	AudioWaveform,
-	BookOpen,
-	Bot,
-	Command,
-	Frame,
-	GalleryVerticalEnd,
-	Map,
-	PieChart,
-	Settings2,
-	SquareTerminal,
-} from "lucide-react";
+	IconLayoutDashboard,
+	IconBriefcase,
+	IconUsers,
+	IconBook,
+	IconCertificate,
+	IconReceipt,
+	IconCoin,
+	IconHeadset,
+	IconSpeakerphone,
+	IconSettings,
+} from "@tabler/icons-react";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
-import { TeamSwitcher } from "@/components/team-switcher";
+import { Logo } from "@/components/logo";
 import {
 	Sidebar,
 	SidebarContent,
 	SidebarFooter,
 	SidebarHeader,
 	SidebarRail,
+	SidebarMenu,
+	SidebarMenuItem,
+	useSidebar,
 } from "@/components/ui/sidebar";
+import Image from "next/image";
 
-// This is sample data.
+function SidebarLogo() {
+	const { state } = useSidebar();
+	const isCollapsed = state === "collapsed";
+
+	return (
+		<a
+			href="/dashboard"
+			className="cursor-pointer flex items-center justify-center"
+		>
+			{isCollapsed ? (
+				<Image
+					src="/logo-short.svg"
+					alt="MELP"
+					width={32}
+					height={32}
+					className="h-8 w-8"
+				/>
+			) : (
+				<Logo className="h-auto w-39.5" aria-label="MELP" />
+			)}
+		</a>
+	);
+}
+
 const data = {
 	user: {
-		name: "shadcn",
-		email: "m@example.com",
-		avatar: "/avatars/shadcn.svg",
+		name: "John Smith",
+		email: "john.smith@tatatele.com",
+		avatar: "/avatars/partner.svg",
+		company: "Tata Teleservices",
+		tier: "Gold" as const,
 	},
-	teams: [
-		{
-			name: "Acme Inc",
-			logo: GalleryVerticalEnd,
-			plan: "Enterprise",
-		},
-		{
-			name: "Acme Corp.",
-			logo: AudioWaveform,
-			plan: "Startup",
-		},
-		{
-			name: "Evil Corp.",
-			logo: Command,
-			plan: "Free",
-		},
-	],
 	navMain: [
 		{
-			title: "Playground",
-			url: "#",
-			icon: SquareTerminal,
-			isActive: true,
-			items: [
-				{
-					title: "History",
-					url: "#",
-				},
-				{
-					title: "Starred",
-					url: "#",
-				},
-				{
-					title: "Settings",
-					url: "#",
-				},
-			],
+			title: "Dashboard",
+			url: "/dashboard",
+			icon: IconLayoutDashboard,
 		},
 		{
-			title: "Models",
-			url: "#",
-			icon: Bot,
-			items: [
-				{
-					title: "Genesis",
-					url: "#",
-				},
-				{
-					title: "Explorer",
-					url: "#",
-				},
-				{
-					title: "Quantum",
-					url: "#",
-				},
-			],
+			title: "Deals",
+			url: "/deals",
+			icon: IconBriefcase,
 		},
 		{
-			title: "Documentation",
-			url: "#",
-			icon: BookOpen,
-			items: [
-				{
-					title: "Introduction",
-					url: "#",
-				},
-				{
-					title: "Get Started",
-					url: "#",
-				},
-				{
-					title: "Tutorials",
-					url: "#",
-				},
-				{
-					title: "Changelog",
-					url: "#",
-				},
-			],
+			title: "Customers",
+			url: "/customers",
+			icon: IconUsers,
+		},
+		{
+			title: "Enablement",
+			url: "/enablement",
+			icon: IconBook,
+		},
+		{
+			title: "Training",
+			url: "/training",
+			icon: IconCertificate,
+		},
+		{
+			title: "Quotes & Pricing",
+			url: "/quotes",
+			icon: IconReceipt,
+		},
+		{
+			title: "Revenue",
+			url: "/revenue",
+			icon: IconCoin,
+		},
+		{
+			title: "Support",
+			url: "/support",
+			icon: IconHeadset,
+		},
+		{
+			title: "Announcements",
+			url: "/announcements",
+			icon: IconSpeakerphone,
 		},
 		{
 			title: "Settings",
-			url: "#",
-			icon: Settings2,
-			items: [
-				{
-					title: "General",
-					url: "#",
-				},
-				{
-					title: "Team",
-					url: "#",
-				},
-				{
-					title: "Billing",
-					url: "#",
-				},
-				{
-					title: "Limits",
-					url: "#",
-				},
-			],
-		},
-	],
-	projects: [
-		{
-			name: "Design Engineering",
-			url: "#",
-			icon: Frame,
-		},
-		{
-			name: "Sales & Marketing",
-			url: "#",
-			icon: PieChart,
-		},
-		{
-			name: "Travel",
-			url: "#",
-			icon: Map,
+			url: "/settings",
+			icon: IconSettings,
 		},
 	],
 };
@@ -160,11 +119,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 	return (
 		<Sidebar collapsible="icon" {...props}>
 			<SidebarHeader>
-				<TeamSwitcher teams={data.teams} />
+				<SidebarMenu>
+					<SidebarMenuItem>
+						<SidebarLogo />
+					</SidebarMenuItem>
+				</SidebarMenu>
 			</SidebarHeader>
 			<SidebarContent>
 				<NavMain items={data.navMain} />
-				<NavProjects projects={data.projects} />
 			</SidebarContent>
 			<SidebarFooter>
 				<NavUser user={data.user} />

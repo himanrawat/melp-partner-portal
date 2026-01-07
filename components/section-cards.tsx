@@ -1,4 +1,4 @@
-import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react"
+import { IconTrendingUp } from "@tabler/icons-react"
 
 import { Badge } from "@/components/ui/badge"
 import {
@@ -12,89 +12,109 @@ import {
 
 export function SectionCards() {
   return (
-    <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+    <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-5">
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Total Revenue</CardDescription>
+          <CardDescription>Pipeline Value</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            $1,250.00
+            $847,500
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
               <IconTrendingUp />
-              +12.5%
+              +18.2%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Trending up this month <IconTrendingUp className="size-4" />
+            Pipeline growing strong <IconTrendingUp className="size-4" />
           </div>
           <div className="text-muted-foreground">
-            Visitors for the last 6 months
+            Total value of active deals
           </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>New Customers</CardDescription>
+          <CardDescription>Avg Deal Size</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            1,234
+            $92,000
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <IconTrendingDown />
-              -20%
+              <IconTrendingUp />
+              +6.1%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Down 20% this period <IconTrendingDown className="size-4" />
+            Typical deal size trending up <IconTrendingUp className="size-4" />
           </div>
           <div className="text-muted-foreground">
-            Acquisition needs attention
+            Based on active pipeline
           </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Active Accounts</CardDescription>
+          <CardDescription>Avg Seats per Deal</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            45,678
+            240
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
               <IconTrendingUp />
-              +12.5%
+              +12
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Strong user retention <IconTrendingUp className="size-4" />
+            Higher seat counts this quarter <IconTrendingUp className="size-4" />
           </div>
-          <div className="text-muted-foreground">Engagement exceed targets</div>
+          <div className="text-muted-foreground">Average seats across active deals</div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Growth Rate</CardDescription>
+          <CardDescription>Term Mix</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            4.5%
+            64% Yearly
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
               <IconTrendingUp />
-              +4.5%
+              36% Monthly
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Steady performance increase <IconTrendingUp className="size-4" />
+            Mix favors yearly terms
           </div>
-          <div className="text-muted-foreground">Meets growth projections</div>
+          <div className="text-muted-foreground">Reflects active contract mix</div>
+        </CardFooter>
+      </Card>
+      <Card className="@container/card">
+        <CardHeader>
+          <CardDescription>Win Rate</CardDescription>
+          <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
+            31%
+          </CardTitle>
+          <CardAction>
+            <Badge variant="outline">
+              <IconTrendingUp />
+              +2.4%
+            </Badge>
+          </CardAction>
+        </CardHeader>
+        <CardFooter className="flex-col items-start gap-1.5 text-sm">
+          <div className="line-clamp-1 flex gap-2 font-medium">
+            Successful outcomes improving <IconTrendingUp className="size-4" />
+          </div>
+          <div className="text-muted-foreground">Closed successful vs total closed</div>
         </CardFooter>
       </Card>
     </div>

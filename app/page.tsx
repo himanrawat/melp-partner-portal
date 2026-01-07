@@ -32,7 +32,7 @@ export default async function Home() {
 				<SiteHeader />
 				<div className="flex flex-1 flex-col">
 					<div className="@container/main flex flex-1 flex-col gap-2">
-						<div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
+						<div className="flex flex-col gap-4 pt-[calc(var(--header-height)+1rem)] pb-4 md:gap-6 md:pb-6">
 							<SectionCards />
 							<div className="px-4 lg:px-6">
 								<ChartAreaInteractive />

@@ -24,6 +24,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+import { toSlug } from "@/lib/utils"
 
 export function NavDocuments({
   items,
@@ -40,46 +41,58 @@ export function NavDocuments({
     <SidebarGroup className="group-data-[collapsible=icon]:hidden">
       <SidebarGroupLabel>Documents</SidebarGroupLabel>
       <SidebarMenu>
-        {items.map((item) => (
-          <SidebarMenuItem key={item.name}>
-            <SidebarMenuButton asChild>
-              <a href={item.url}>
-                <item.icon />
-                <span>{item.name}</span>
-              </a>
-            </SidebarMenuButton>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <SidebarMenuAction
-                  showOnHover
-                  className="data-[state=open]:bg-accent rounded-sm"
+        {items.map((item) => {
+          const menuId = `document-${toSlug(item.name)}`
+          const triggerId = `${menuId}-trigger`
+          const contentId = `${menuId}-content`
+
+          return (
+            <SidebarMenuItem key={item.name}>
+              <SidebarMenuButton asChild>
+                <a href={item.url}>
+                  <item.icon />
+                  <span>{item.name}</span>
+                </a>
+              </SidebarMenuButton>
+              <DropdownMenu>
+                <DropdownMenuTrigger
+                  asChild
+                  id={triggerId}
+                  aria-controls={contentId}
                 >
-                  <IconDots />
-                  <span className="sr-only">More</span>
-                </SidebarMenuAction>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                className="w-24 rounded-lg"
-                side={isMobile ? "bottom" : "right"}
-                align={isMobile ? "end" : "start"}
-              >
-                <DropdownMenuItem>
-                  <IconFolder />
-                  <span>Open</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <IconShare3 />
-                  <span>Share</span>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem variant="destructive">
-                  <IconTrash />
-                  <span>Delete</span>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </SidebarMenuItem>
-        ))}
+                  <SidebarMenuAction
+                    showOnHover
+                    className="data-[state=open]:bg-accent rounded-sm"
+                  >
+                    <IconDots />
+                    <span className="sr-only">More</span>
+                  </SidebarMenuAction>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  id={contentId}
+                  aria-labelledby={triggerId}
+                  className="w-24 rounded-lg"
+                  side={isMobile ? "bottom" : "right"}
+                  align={isMobile ? "end" : "start"}
+                >
+                  <DropdownMenuItem>
+                    <IconFolder />
+                    <span>Open</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <IconShare3 />
+                    <span>Share</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem variant="destructive">
+                    <IconTrash />
+                    <span>Delete</span>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </SidebarMenuItem>
+          )
+        })}
         <SidebarMenuItem>
           <SidebarMenuButton className="text-sidebar-foreground/70">
             <IconDots className="text-sidebar-foreground/70" />
