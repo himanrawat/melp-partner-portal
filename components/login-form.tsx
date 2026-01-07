@@ -24,7 +24,7 @@ export function LoginForm({
 		setError("");
 
 		// Dummy credentials check
-		if (email === "admin@example.com" && password === "password") {
+		if (email === "admin@melpapp.us" && password === "password") {
 			// Set a dummy cookie
 			document.cookie = "auth-token=dummy-token; path=/; max-age=86400"; // 1 day
 			router.push("/");

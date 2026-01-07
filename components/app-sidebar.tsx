@@ -57,7 +57,7 @@ const data = {
 	user: {
 		name: "John Smith",
 		email: "john.smith@tatatele.com",
-		avatar: "/avatars/partner.svg",
+		avatar: "/avatars/user-2.png",
 		company: "Tata Teleservices",
 		tier: "Gold" as const,
 	},
@@ -78,7 +78,7 @@ const data = {
 			icon: IconUsers,
 		},
 		{
-			title: "Enablement",
+			title: "Resources",
 			url: "/enablement",
 			icon: IconBook,
 		},

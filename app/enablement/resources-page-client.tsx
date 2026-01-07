@@ -47,7 +47,7 @@ interface Resource {
 	highlights?: string[];
 }
 
-interface EnablementData {
+interface ResourcesData {
 	sales: Resource[];
 	competitive: Resource[];
 	demo: Resource[];
@@ -57,19 +57,19 @@ interface EnablementData {
 	updates: Resource[];
 }
 
-interface EnablementPageClientProps {
-	data: EnablementData;
+interface ResourcesPageClientProps {
+	data: ResourcesData;
 }
 
 const CATEGORY_CONFIG = {
 	sales: {
-		title: "Sales Enablement",
+		title: "Sales Resources",
 		description:
 			"Pitch decks, one-pagers, discovery guides, and email templates",
 		icon: IconPresentation,
 	},
 	competitive: {
-		title: "Competitive Enablement",
+		title: "Competitive Resources",
 		description: "Battle cards, objection handling, and talk tracks",
 		icon: IconSwords,
 	},
@@ -89,7 +89,7 @@ const CATEGORY_CONFIG = {
 		icon: IconCode,
 	},
 	marketing: {
-		title: "Marketing Enablement",
+		title: "Marketing Resources",
 		description: "Case studies, logos, and co-branding materials",
 		icon: IconSpeakerphone,
 	},
@@ -269,7 +269,7 @@ function CategorySection({
 	);
 }
 
-export function EnablementPageClient({ data }: EnablementPageClientProps) {
+export function ResourcesPageClient({ data }: ResourcesPageClientProps) {
 	const [searchQuery, setSearchQuery] = React.useState("");
 	const [activeTab, setActiveTab] = React.useState("all");
 
@@ -299,10 +299,10 @@ export function EnablementPageClient({ data }: EnablementPageClientProps) {
 				<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 					<div>
 						<h1 className="text-2xl font-semibold tracking-tight">
-							Enablement
+							Resources
 						</h1>
 						<p className="text-muted-foreground">
-							Everything you need to sell, position, and deliver MELP
+							Resources to sell, position, and deliver MELP
 						</p>
 					</div>
 					<Badge variant="outline" className="w-fit">
