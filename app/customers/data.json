@@ -1,0 +1,372 @@
+[
+  {
+    "id": 1,
+    "customerId": "C-1001",
+    "name": "Acme Corporation",
+    "domain": "acme.com",
+    "industry": "Technology",
+    "region": "North America",
+    "plan": "Enterprise",
+    "seats": 250,
+    "seatsUsed": 228,
+    "products": ["Chat", "Meetings", "AI Summaries", "Translation"],
+    "contractStart": "2024-01-15",
+    "contractEnd": "2025-01-14",
+    "renewalType": "Auto",
+    "adoptionHealth": "Good",
+    "activeUsersTrend": "up",
+    "openIssues": 0,
+    "owner": "Sarah Chen",
+    "adminContact": {
+      "name": "John Smith",
+      "email": "john.smith@acme.com",
+      "phone": "+1 555-0101"
+    },
+    "billingContact": {
+      "name": "Jane Doe",
+      "email": "billing@acme.com",
+      "phone": "+1 555-0102"
+    },
+    "champion": {
+      "name": "Mike Johnson",
+      "email": "mike.j@acme.com",
+      "role": "IT Director"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Add 50 more seats", "Enable Translation add-on for APAC team"],
+    "lastActivity": "2024-12-28"
+  },
+  {
+    "id": 2,
+    "customerId": "C-1002",
+    "name": "Global Dynamics",
+    "domain": "globaldynamics.io",
+    "industry": "Finance",
+    "region": "EMEA",
+    "plan": "Business",
+    "seats": 150,
+    "seatsUsed": 89,
+    "products": ["Chat", "Meetings"],
+    "contractStart": "2024-03-01",
+    "contractEnd": "2025-02-28",
+    "renewalType": "Manual",
+    "adoptionHealth": "Medium",
+    "activeUsersTrend": "flat",
+    "openIssues": 2,
+    "owner": "Marcus Webb",
+    "adminContact": {
+      "name": "Lisa Brown",
+      "email": "lisa.brown@globaldynamics.io",
+      "phone": "+44 20 7946 0958"
+    },
+    "billingContact": {
+      "name": "Robert Taylor",
+      "email": "finance@globaldynamics.io",
+      "phone": "+44 20 7946 0959"
+    },
+    "champion": {
+      "name": "Emma Wilson",
+      "email": "emma.w@globaldynamics.io",
+      "role": "Operations Manager"
+    },
+    "riskFlags": ["Low seat utilization"],
+    "expansionOpportunities": ["Upgrade to Enterprise", "Add AI Summaries"],
+    "lastActivity": "2024-12-20"
+  },
+  {
+    "id": 3,
+    "customerId": "C-1003",
+    "name": "HealthFirst Medical",
+    "domain": "healthfirst.med",
+    "industry": "Healthcare",
+    "region": "North America",
+    "plan": "Enterprise",
+    "seats": 500,
+    "seatsUsed": 487,
+    "products": ["Chat", "Meetings", "AI Summaries"],
+    "contractStart": "2024-06-01",
+    "contractEnd": "2025-05-31",
+    "renewalType": "Auto",
+    "adoptionHealth": "Good",
+    "activeUsersTrend": "up",
+    "openIssues": 1,
+    "owner": "Sarah Chen",
+    "adminContact": {
+      "name": "Dr. Patricia Lee",
+      "email": "p.lee@healthfirst.med",
+      "phone": "+1 555-0201"
+    },
+    "billingContact": {
+      "name": "Mark Stevens",
+      "email": "accounts@healthfirst.med",
+      "phone": "+1 555-0202"
+    },
+    "champion": {
+      "name": "Nancy Clark",
+      "email": "n.clark@healthfirst.med",
+      "role": "CIO"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Add Translation for international staff"],
+    "lastActivity": "2024-12-30"
+  },
+  {
+    "id": 4,
+    "customerId": "C-1004",
+    "name": "EduTech Solutions",
+    "domain": "edutech.edu",
+    "industry": "Education",
+    "region": "APAC",
+    "plan": "Professional",
+    "seats": 75,
+    "seatsUsed": 71,
+    "products": ["Chat", "Meetings"],
+    "contractStart": "2024-09-01",
+    "contractEnd": "2025-08-31",
+    "renewalType": "Auto",
+    "adoptionHealth": "Good",
+    "activeUsersTrend": "up",
+    "openIssues": 0,
+    "owner": "Aiko Tanaka",
+    "adminContact": {
+      "name": "David Kim",
+      "email": "d.kim@edutech.edu",
+      "phone": "+82 2-555-0301"
+    },
+    "billingContact": {
+      "name": "Susan Park",
+      "email": "billing@edutech.edu",
+      "phone": "+82 2-555-0302"
+    },
+    "champion": {
+      "name": "James Choi",
+      "email": "j.choi@edutech.edu",
+      "role": "Director of IT"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Upgrade to Business plan", "Add AI Summaries for faculty"],
+    "lastActivity": "2024-12-27"
+  },
+  {
+    "id": 5,
+    "customerId": "C-1005",
+    "name": "RetailMax Inc",
+    "domain": "retailmax.com",
+    "industry": "Retail",
+    "region": "North America",
+    "plan": "Business",
+    "seats": 200,
+    "seatsUsed": 112,
+    "products": ["Chat", "Meetings", "Translation"],
+    "contractStart": "2024-02-15",
+    "contractEnd": "2025-02-14",
+    "renewalType": "Manual",
+    "adoptionHealth": "Risk",
+    "activeUsersTrend": "down",
+    "openIssues": 3,
+    "owner": "Marcus Webb",
+    "adminContact": {
+      "name": "Kevin Moore",
+      "email": "k.moore@retailmax.com",
+      "phone": "+1 555-0401"
+    },
+    "billingContact": {
+      "name": "Amy Chen",
+      "email": "ap@retailmax.com",
+      "phone": "+1 555-0402"
+    },
+    "champion": {
+      "name": "Tom Harris",
+      "email": "t.harris@retailmax.com",
+      "role": "VP Operations"
+    },
+    "riskFlags": ["Low usage", "No admin activity in 30 days", "3 open tickets"],
+    "expansionOpportunities": [],
+    "lastActivity": "2024-11-15"
+  },
+  {
+    "id": 6,
+    "customerId": "C-1006",
+    "name": "Nordic Manufacturing",
+    "domain": "nordicmfg.se",
+    "industry": "Manufacturing",
+    "region": "EMEA",
+    "plan": "Enterprise",
+    "seats": 350,
+    "seatsUsed": 340,
+    "products": ["Chat", "Meetings", "AI Summaries", "Translation"],
+    "contractStart": "2024-04-01",
+    "contractEnd": "2025-03-31",
+    "renewalType": "Auto",
+    "adoptionHealth": "Good",
+    "activeUsersTrend": "up",
+    "openIssues": 0,
+    "owner": "Aiko Tanaka",
+    "adminContact": {
+      "name": "Erik Johansson",
+      "email": "e.johansson@nordicmfg.se",
+      "phone": "+46 8 555 0501"
+    },
+    "billingContact": {
+      "name": "Ingrid Larsson",
+      "email": "finance@nordicmfg.se",
+      "phone": "+46 8 555 0502"
+    },
+    "champion": {
+      "name": "Anders Nilsson",
+      "email": "a.nilsson@nordicmfg.se",
+      "role": "Head of Digital"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Add 100 seats for new factory"],
+    "lastActivity": "2024-12-29"
+  },
+  {
+    "id": 7,
+    "customerId": "C-1007",
+    "name": "LegalEase Partners",
+    "domain": "legalease.law",
+    "industry": "Legal",
+    "region": "North America",
+    "plan": "Professional",
+    "seats": 45,
+    "seatsUsed": 44,
+    "products": ["Chat", "Meetings", "AI Summaries"],
+    "contractStart": "2024-07-01",
+    "contractEnd": "2025-06-30",
+    "renewalType": "Auto",
+    "adoptionHealth": "Good",
+    "activeUsersTrend": "flat",
+    "openIssues": 0,
+    "owner": "Sarah Chen",
+    "adminContact": {
+      "name": "Rachel Green",
+      "email": "r.green@legalease.law",
+      "phone": "+1 555-0601"
+    },
+    "billingContact": {
+      "name": "Monica Geller",
+      "email": "billing@legalease.law",
+      "phone": "+1 555-0602"
+    },
+    "champion": {
+      "name": "Ross Geller",
+      "email": "ross@legalease.law",
+      "role": "Managing Partner"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Add Translation for international clients"],
+    "lastActivity": "2024-12-26"
+  },
+  {
+    "id": 8,
+    "customerId": "C-1008",
+    "name": "StartupHub Ventures",
+    "domain": "startuphub.vc",
+    "industry": "Finance",
+    "region": "North America",
+    "plan": "Starter",
+    "seats": 25,
+    "seatsUsed": 18,
+    "products": ["Chat", "Meetings"],
+    "contractStart": "2024-10-01",
+    "contractEnd": "2025-09-30",
+    "renewalType": "Auto",
+    "adoptionHealth": "Medium",
+    "activeUsersTrend": "flat",
+    "openIssues": 1,
+    "owner": "Marcus Webb",
+    "adminContact": {
+      "name": "Alex Rivera",
+      "email": "alex@startuphub.vc",
+      "phone": "+1 555-0701"
+    },
+    "billingContact": {
+      "name": "Jordan Lee",
+      "email": "jordan@startuphub.vc",
+      "phone": "+1 555-0702"
+    },
+    "champion": {
+      "name": "Casey Morgan",
+      "email": "casey@startuphub.vc",
+      "role": "COO"
+    },
+    "riskFlags": ["Low seat utilization"],
+    "expansionOpportunities": ["Upgrade to Professional", "Add AI Summaries"],
+    "lastActivity": "2024-12-22"
+  },
+  {
+    "id": 9,
+    "customerId": "C-1009",
+    "name": "Pacific Airlines",
+    "domain": "pacificair.com",
+    "industry": "Transportation",
+    "region": "APAC",
+    "plan": "Enterprise",
+    "seats": 800,
+    "seatsUsed": 756,
+    "products": ["Chat", "Meetings", "AI Summaries", "Translation"],
+    "contractStart": "2024-05-01",
+    "contractEnd": "2025-04-30",
+    "renewalType": "Manual",
+    "adoptionHealth": "Good",
+    "activeUsersTrend": "up",
+    "openIssues": 2,
+    "owner": "Aiko Tanaka",
+    "adminContact": {
+      "name": "Wei Zhang",
+      "email": "w.zhang@pacificair.com",
+      "phone": "+86 21 5555 0801"
+    },
+    "billingContact": {
+      "name": "Mei Lin",
+      "email": "finance@pacificair.com",
+      "phone": "+86 21 5555 0802"
+    },
+    "champion": {
+      "name": "Chen Wei",
+      "email": "c.wei@pacificair.com",
+      "role": "SVP Technology"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Expand to 1000 seats", "Add cargo division"],
+    "lastActivity": "2024-12-30"
+  },
+  {
+    "id": 10,
+    "customerId": "C-1010",
+    "name": "Green Energy Co",
+    "domain": "greenenergy.eco",
+    "industry": "Energy",
+    "region": "EMEA",
+    "plan": "Business",
+    "seats": 120,
+    "seatsUsed": 98,
+    "products": ["Chat", "Meetings", "AI Summaries"],
+    "contractStart": "2024-08-01",
+    "contractEnd": "2025-07-31",
+    "renewalType": "Auto",
+    "adoptionHealth": "Medium",
+    "activeUsersTrend": "flat",
+    "openIssues": 0,
+    "owner": "Sarah Chen",
+    "adminContact": {
+      "name": "Hans Mueller",
+      "email": "h.mueller@greenenergy.eco",
+      "phone": "+49 30 5555 0901"
+    },
+    "billingContact": {
+      "name": "Greta Schmidt",
+      "email": "accounts@greenenergy.eco",
+      "phone": "+49 30 5555 0902"
+    },
+    "champion": {
+      "name": "Klaus Weber",
+      "email": "k.weber@greenenergy.eco",
+      "role": "Head of IT"
+    },
+    "riskFlags": [],
+    "expansionOpportunities": ["Upgrade to Enterprise", "Add Translation"],
+    "lastActivity": "2024-12-25"
+  }
+]

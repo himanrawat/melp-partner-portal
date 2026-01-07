@@ -1,0 +1,446 @@
+{
+  "sales": [
+    {
+      "id": "s1",
+      "title": "MELP Pitch Deck - Technology",
+      "description": "Complete sales presentation tailored for technology companies",
+      "type": "Presentation",
+      "format": "PPTX",
+      "updatedAt": "2024-12-15",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s2",
+      "title": "MELP Pitch Deck - Healthcare",
+      "description": "HIPAA-focused presentation for healthcare organizations",
+      "type": "Presentation",
+      "format": "PPTX",
+      "updatedAt": "2024-12-10",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s3",
+      "title": "MELP Pitch Deck - Finance",
+      "description": "Compliance-focused presentation for financial services",
+      "type": "Presentation",
+      "format": "PPTX",
+      "updatedAt": "2024-12-08",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s4",
+      "title": "Why MELP - One Pager",
+      "description": "High-level value proposition document for quick sharing",
+      "type": "One-Pager",
+      "format": "PDF",
+      "updatedAt": "2024-12-20",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s5",
+      "title": "AI Summaries Feature Sheet",
+      "description": "Deep dive into MELP's AI-powered meeting summaries",
+      "type": "One-Pager",
+      "format": "PDF",
+      "updatedAt": "2024-12-18",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s6",
+      "title": "Translation Feature Sheet",
+      "description": "Real-time translation capabilities and supported languages",
+      "type": "One-Pager",
+      "format": "PDF",
+      "updatedAt": "2024-12-12",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s7",
+      "title": "Security & Compliance Overview",
+      "description": "SOC 2, GDPR, HIPAA compliance documentation",
+      "type": "One-Pager",
+      "format": "PDF",
+      "updatedAt": "2024-12-05",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s8",
+      "title": "Discovery Questions Guide",
+      "description": "Key questions to ask prospects during discovery calls",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-11-28",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s9",
+      "title": "Email Templates - Intro Sequence",
+      "description": "Cold outreach and introduction email templates",
+      "type": "Template",
+      "format": "DOCX",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "s10",
+      "title": "Email Templates - Follow-up",
+      "description": "Post-demo and nurture email templates",
+      "type": "Template",
+      "format": "DOCX",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    }
+  ],
+  "competitive": [
+    {
+      "id": "c1",
+      "title": "MELP vs Microsoft Teams",
+      "description": "Detailed comparison including talk tracks and objection handling",
+      "type": "Battle Card",
+      "format": "PDF",
+      "updatedAt": "2024-12-22",
+      "downloadUrl": "#",
+      "highlights": ["Better AI integration", "Simpler pricing", "Faster deployment"]
+    },
+    {
+      "id": "c2",
+      "title": "MELP vs Slack",
+      "description": "Feature comparison with positioning guidance",
+      "type": "Battle Card",
+      "format": "PDF",
+      "updatedAt": "2024-12-20",
+      "downloadUrl": "#",
+      "highlights": ["Native video", "Built-in translation", "Unified platform"]
+    },
+    {
+      "id": "c3",
+      "title": "MELP vs Zoom",
+      "description": "Why MELP wins for unified communications",
+      "type": "Battle Card",
+      "format": "PDF",
+      "updatedAt": "2024-12-18",
+      "downloadUrl": "#",
+      "highlights": ["Integrated chat", "AI summaries", "Better security"]
+    },
+    {
+      "id": "c4",
+      "title": "Common Objections Playbook",
+      "description": "Top 10 objections and how to handle them",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-12-15",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "c5",
+      "title": "Competitive Talk Tracks",
+      "description": "Audio-friendly scripts for sales calls",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-12-10",
+      "downloadUrl": "#"
+    }
+  ],
+  "demo": [
+    {
+      "id": "d1",
+      "title": "15-Minute Demo Script",
+      "description": "Quick demo flow for busy executives",
+      "type": "Script",
+      "format": "PDF",
+      "updatedAt": "2024-12-20",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "d2",
+      "title": "Full Product Demo Script",
+      "description": "Comprehensive 45-minute demo walkthrough",
+      "type": "Script",
+      "format": "PDF",
+      "updatedAt": "2024-12-18",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "d3",
+      "title": "Live Demo Checklist",
+      "description": "Pre-demo setup and best practices",
+      "type": "Checklist",
+      "format": "PDF",
+      "updatedAt": "2024-12-15",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "d4",
+      "title": "Chat Features Walkthrough",
+      "description": "Video demo of messaging capabilities",
+      "type": "Video",
+      "format": "MP4",
+      "duration": "8:32",
+      "updatedAt": "2024-12-12",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "d5",
+      "title": "Meetings & AI Summaries Demo",
+      "description": "Video showing meeting features and AI capabilities",
+      "type": "Video",
+      "format": "MP4",
+      "duration": "12:45",
+      "updatedAt": "2024-12-10",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "d6",
+      "title": "Translation Demo",
+      "description": "Real-time translation feature showcase",
+      "type": "Video",
+      "format": "MP4",
+      "duration": "5:20",
+      "updatedAt": "2024-12-08",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "d7",
+      "title": "Admin Console Walkthrough",
+      "description": "Admin setup and management features",
+      "type": "Video",
+      "format": "MP4",
+      "duration": "15:10",
+      "updatedAt": "2024-12-05",
+      "downloadUrl": "#"
+    }
+  ],
+  "pricing": [
+    {
+      "id": "p1",
+      "title": "MELP Plans Overview",
+      "description": "Starter, Professional, Business, and Enterprise plans",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "p2",
+      "title": "What's Included by Plan",
+      "description": "Feature matrix across all plans",
+      "type": "Matrix",
+      "format": "PDF",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "p3",
+      "title": "Partner Discount Guidelines",
+      "description": "Discount rules and approval thresholds",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-11-15",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "p4",
+      "title": "Quote Request Process",
+      "description": "How to submit and track custom quotes",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-11-10",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "p5",
+      "title": "Add-On Pricing Sheet",
+      "description": "AI Summaries, Translation, and other add-ons",
+      "type": "Price Sheet",
+      "format": "PDF",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    }
+  ],
+  "technical": [
+    {
+      "id": "t1",
+      "title": "Implementation Checklist",
+      "description": "Step-by-step deployment guide for SI partners",
+      "type": "Checklist",
+      "format": "PDF",
+      "updatedAt": "2024-12-10",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "t2",
+      "title": "Security Architecture Overview",
+      "description": "Technical security documentation for IT teams",
+      "type": "Whitepaper",
+      "format": "PDF",
+      "updatedAt": "2024-12-05",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "t3",
+      "title": "SSO Configuration Guide",
+      "description": "SAML, OIDC, and Azure AD integration",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "t4",
+      "title": "Admin Setup Guide",
+      "description": "Initial configuration and user management",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-11-28",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "t5",
+      "title": "API Integration Guide",
+      "description": "REST API documentation for developers",
+      "type": "Documentation",
+      "format": "PDF",
+      "updatedAt": "2024-11-20",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "t6",
+      "title": "Compliance Certifications",
+      "description": "SOC 2 Type II, GDPR, HIPAA documentation",
+      "type": "Certification",
+      "format": "PDF",
+      "updatedAt": "2024-11-15",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "t7",
+      "title": "Data Residency Options",
+      "description": "Regional data storage and compliance",
+      "type": "Whitepaper",
+      "format": "PDF",
+      "updatedAt": "2024-11-10",
+      "downloadUrl": "#"
+    }
+  ],
+  "marketing": [
+    {
+      "id": "m1",
+      "title": "Customer Success Story - TechCorp",
+      "description": "How TechCorp improved collaboration by 40%",
+      "type": "Case Study",
+      "format": "PDF",
+      "updatedAt": "2024-12-15",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m2",
+      "title": "Customer Success Story - HealthFirst",
+      "description": "HIPAA-compliant communication transformation",
+      "type": "Case Study",
+      "format": "PDF",
+      "updatedAt": "2024-12-10",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m3",
+      "title": "Customer Success Story - GlobalBank",
+      "description": "Secure messaging for financial services",
+      "type": "Case Study",
+      "format": "PDF",
+      "updatedAt": "2024-12-05",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m4",
+      "title": "Approved Customer Logos",
+      "description": "Logos approved for partner use",
+      "type": "Asset Pack",
+      "format": "ZIP",
+      "updatedAt": "2024-12-01",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m5",
+      "title": "Co-Branding Guidelines",
+      "description": "How to use MELP brand assets correctly",
+      "type": "Guide",
+      "format": "PDF",
+      "updatedAt": "2024-11-25",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m6",
+      "title": "Social Media Copy Kit",
+      "description": "LinkedIn and Twitter post templates",
+      "type": "Template",
+      "format": "DOCX",
+      "updatedAt": "2024-12-18",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m7",
+      "title": "Webinar Presentation Kit",
+      "description": "Slides and scripts for partner webinars",
+      "type": "Kit",
+      "format": "ZIP",
+      "updatedAt": "2024-12-12",
+      "downloadUrl": "#"
+    },
+    {
+      "id": "m8",
+      "title": "Event Booth Materials",
+      "description": "Banners, flyers, and giveaway ideas",
+      "type": "Kit",
+      "format": "ZIP",
+      "updatedAt": "2024-11-20",
+      "downloadUrl": "#"
+    }
+  ],
+  "updates": [
+    {
+      "id": "u1",
+      "title": "January 2025 Release Notes",
+      "description": "New AI features and performance improvements",
+      "type": "Release Notes",
+      "date": "2025-01-02",
+      "highlights": ["Enhanced AI summaries", "Mobile app improvements", "New integrations"],
+      "downloadUrl": "#"
+    },
+    {
+      "id": "u2",
+      "title": "December 2024 Release Notes",
+      "description": "Translation improvements and security updates",
+      "type": "Release Notes",
+      "date": "2024-12-15",
+      "highlights": ["5 new languages", "SOC 2 Type II certified", "Faster video"],
+      "downloadUrl": "#"
+    },
+    {
+      "id": "u3",
+      "title": "What to Pitch This Month",
+      "description": "Key talking points for January 2025",
+      "type": "Sales Brief",
+      "date": "2025-01-01",
+      "highlights": ["AI summaries GA", "New Enterprise tier", "Volume discounts"],
+      "downloadUrl": "#"
+    },
+    {
+      "id": "u4",
+      "title": "Q1 2025 Partner Promotions",
+      "description": "Special incentives and promotions for partners",
+      "type": "Promotion",
+      "date": "2025-01-01",
+      "highlights": ["2x accelerators on AI add-on", "Free training", "SPIFF program"],
+      "downloadUrl": "#"
+    },
+    {
+      "id": "u5",
+      "title": "Pricing Update - January 2025",
+      "description": "Changes to Enterprise tier pricing",
+      "type": "Pricing Update",
+      "date": "2025-01-01",
+      "highlights": ["Enterprise price adjustment", "New volume tiers", "Updated discounts"],
+      "downloadUrl": "#"
+    }
+  ]
+}
