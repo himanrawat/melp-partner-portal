@@ -39,8 +39,6 @@ interface Customer {
   region: string
   plan: string
   seats: number
-  seatsUsed: number
-  products: string[]
   contractStart: string
   contractEnd: string
   renewalType: string

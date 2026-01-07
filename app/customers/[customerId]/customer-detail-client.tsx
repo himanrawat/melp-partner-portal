@@ -51,8 +51,6 @@ interface Customer {
   region: string
   plan: string
   seats: number
-  seatsUsed: number
-  products: string[]
   contractStart: string
   contractEnd: string
   renewalType: string
@@ -134,8 +132,6 @@ export function CustomerDetailClient({ customer }: CustomerDetailClientProps) {
   const daysUntilRenewal = Math.ceil(
     (contractEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)
   )
-  const seatUtilization = Math.round((customer.seatsUsed / customer.seats) * 100)
-
   // Mock tickets data
   const tickets = [
     { id: "T-1001", subject: "SSO configuration issue", severity: "Medium", status: "Open", created: "2024-12-28" },
@@ -284,45 +280,22 @@ export function CustomerDetailClient({ customer }: CustomerDetailClientProps) {
 
             <Card className="md:col-span-2">
               <CardHeader>
-                <CardTitle>Products & Seats</CardTitle>
-                <CardDescription>Enabled features and license utilization</CardDescription>
+                <CardTitle>Subscription</CardTitle>
+                <CardDescription>License and seat information</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div>
-                    <p className="text-sm text-muted-foreground mb-2">Enabled Products</p>
-                    <div className="flex flex-wrap gap-2">
-                      {customer.products.map((product) => (
-                        <Badge key={product} variant="outline">
-                          {product}
-                        </Badge>
-                      ))}
-                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">Plan</p>
+                    <Badge variant="secondary" className="text-base">
+                      {customer.plan}
+                    </Badge>
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground mb-2">Seat Utilization</p>
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between">
-                        <span className="text-2xl font-semibold">
-                          {customer.seatsUsed} / {customer.seats}
-                        </span>
-                        <span className="text-sm text-muted-foreground">
-                          {seatUtilization}% used
-                        </span>
-                      </div>
-                      <div className="h-2 rounded-full bg-muted overflow-hidden">
-                        <div
-                          className={`h-full rounded-full ${
-                            seatUtilization >= 90
-                              ? "bg-green-500"
-                              : seatUtilization >= 60
-                              ? "bg-amber-500"
-                              : "bg-red-500"
-                          }`}
-                          style={{ width: `${seatUtilization}%` }}
-                        />
-                      </div>
-                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">Seats</p>
+                    <span className="text-2xl font-semibold">
+                      {customer.seats}
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -446,11 +419,9 @@ export function CustomerDetailClient({ customer }: CustomerDetailClientProps) {
                     {getTrendIcon(customer.activeUsersTrend)}
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Seat Utilization</span>
-                    <span className={`font-medium ${
-                      seatUtilization >= 80 ? "text-green-600" : seatUtilization >= 50 ? "text-amber-600" : "text-red-600"
-                    }`}>
-                      {seatUtilization}%
+                    <span className="text-muted-foreground">Total Seats</span>
+                    <span className="font-medium">
+                      {customer.seats}
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -494,38 +465,6 @@ export function CustomerDetailClient({ customer }: CustomerDetailClientProps) {
               </CardContent>
             </Card>
 
-            <Card className="md:col-span-2">
-              <CardHeader>
-                <CardTitle>Feature Adoption</CardTitle>
-                <CardDescription>Which MELP features are being used</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                  {["Chat", "Meetings", "AI Summaries", "Translation"].map((feature) => {
-                    const isEnabled = customer.products.includes(feature)
-                    return (
-                      <div
-                        key={feature}
-                        className={`rounded-lg border p-4 ${
-                          isEnabled ? "border-green-200 bg-green-50 dark:border-green-800 dark:bg-green-950" : "border-muted"
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="font-medium">{feature}</span>
-                          {isEnabled ? (
-                            <Badge className="bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300">
-                              Active
-                            </Badge>
-                          ) : (
-                            <Badge variant="outline">Not Enabled</Badge>
-                          )}
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </TabsContent>
 

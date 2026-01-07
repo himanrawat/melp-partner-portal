@@ -1,0 +1,350 @@
+{
+  "partnerProgress": {
+    "completedCertifications": 2,
+    "inProgressCertifications": 1,
+    "totalCertifications": 4,
+    "nextTierRequirement": "Complete Implementation Certification to reach Platinum tier"
+  },
+  "tracks": [
+    {
+      "id": "sales",
+      "title": "Sales Certification",
+      "description": "Master the MELP value proposition, ideal customer profiles, and sales techniques",
+      "requiredForTier": true,
+      "status": "completed",
+      "completedDate": "2024-11-15",
+      "expiryDate": "2025-11-15",
+      "badge": "Sales Certified",
+      "modules": [
+        {
+          "id": "sales-1",
+          "title": "MELP Value Proposition",
+          "description": "Understand the core value MELP delivers and how to articulate it",
+          "type": "video",
+          "duration": "15 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Articulate MELP's unified platform advantage",
+            "Explain the AI-powered features value",
+            "Position MELP against point solutions"
+          ]
+        },
+        {
+          "id": "sales-2",
+          "title": "Ideal Customer Profile",
+          "description": "Learn to identify and qualify the right prospects for MELP",
+          "type": "reading",
+          "duration": "10 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Identify key buyer personas",
+            "Recognize buying signals",
+            "Qualify opportunities effectively"
+          ]
+        },
+        {
+          "id": "sales-3",
+          "title": "AI Feature Positioning",
+          "description": "Position AI Summaries, Translation, and Search capabilities",
+          "type": "video",
+          "duration": "20 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Demonstrate AI summary capabilities",
+            "Explain real-time translation value",
+            "Position responsible AI messaging"
+          ]
+        },
+        {
+          "id": "sales-4",
+          "title": "Pricing Basics",
+          "description": "Understand MELP's seat-based pricing and usage limits",
+          "type": "reading",
+          "duration": "15 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Explain seat-based pricing model",
+            "Understand usage limits per plan",
+            "Navigate volume discounts"
+          ]
+        },
+        {
+          "id": "sales-5",
+          "title": "Objection Handling",
+          "description": "Master responses to common customer objections",
+          "type": "video",
+          "duration": "25 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Handle pricing objections",
+            "Address competitive comparisons",
+            "Overcome security concerns"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "title": "Product Certification",
+      "description": "Deep dive into MELP's features, modules, and technical capabilities",
+      "requiredForTier": true,
+      "status": "completed",
+      "completedDate": "2024-12-01",
+      "expiryDate": "2025-12-01",
+      "badge": "Product Certified",
+      "modules": [
+        {
+          "id": "product-1",
+          "title": "Core Platform Overview",
+          "description": "Understand MELP as a unified communication platform",
+          "type": "video",
+          "duration": "20 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Navigate the MELP interface",
+            "Understand unified messaging approach",
+            "Explain platform architecture"
+          ]
+        },
+        {
+          "id": "product-2",
+          "title": "Chat & Messaging",
+          "description": "Master the chat features including channels, DMs, and threads",
+          "type": "video",
+          "duration": "25 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Create and manage channels",
+            "Use threading effectively",
+            "Configure chat settings"
+          ]
+        },
+        {
+          "id": "product-3",
+          "title": "Meetings & Video",
+          "description": "Learn video conferencing, scheduling, and recording features",
+          "type": "video",
+          "duration": "30 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Schedule and host meetings",
+            "Use recording and transcription",
+            "Configure meeting settings"
+          ]
+        },
+        {
+          "id": "product-4",
+          "title": "AI Summaries & Translation",
+          "description": "Deep dive into AI-powered features",
+          "type": "video",
+          "duration": "25 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Generate meeting summaries",
+            "Use real-time translation",
+            "Configure AI preferences"
+          ]
+        },
+        {
+          "id": "product-5",
+          "title": "Admin & User Roles",
+          "description": "Understand administrative capabilities and permissions",
+          "type": "reading",
+          "duration": "20 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Configure user roles",
+            "Manage permissions",
+            "Set up teams and groups"
+          ]
+        },
+        {
+          "id": "product-6",
+          "title": "Security Fundamentals",
+          "description": "Learn about MELP's security features and compliance",
+          "type": "reading",
+          "duration": "15 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Explain encryption approach",
+            "Understand compliance certifications",
+            "Configure security settings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation",
+      "title": "Implementation Certification",
+      "description": "For SI partners: setup, migration, and deployment best practices",
+      "requiredForTier": true,
+      "status": "in_progress",
+      "badge": "Implementation Certified",
+      "modules": [
+        {
+          "id": "impl-1",
+          "title": "Setup Checklist",
+          "description": "Complete deployment checklist for new customers",
+          "type": "reading",
+          "duration": "30 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Follow deployment sequence",
+            "Validate environment requirements",
+            "Complete pre-launch checklist"
+          ]
+        },
+        {
+          "id": "impl-2",
+          "title": "Migration Basics",
+          "description": "Migrate users and data from other platforms",
+          "type": "video",
+          "duration": "35 min",
+          "status": "completed",
+          "requiredForTier": true,
+          "objectives": [
+            "Plan migration strategy",
+            "Export and import data",
+            "Handle user provisioning"
+          ]
+        },
+        {
+          "id": "impl-3",
+          "title": "Admin Configuration",
+          "description": "Configure admin console for enterprise deployments",
+          "type": "video",
+          "duration": "40 min",
+          "status": "in_progress",
+          "requiredForTier": true,
+          "objectives": [
+            "Configure SSO integration",
+            "Set up compliance policies",
+            "Manage retention settings"
+          ]
+        },
+        {
+          "id": "impl-4",
+          "title": "Integration Setup",
+          "description": "Connect MELP with enterprise systems",
+          "type": "reading",
+          "duration": "25 min",
+          "status": "not_started",
+          "requiredForTier": true,
+          "objectives": [
+            "Configure API integrations",
+            "Set up webhooks",
+            "Connect third-party apps"
+          ]
+        },
+        {
+          "id": "impl-5",
+          "title": "Best Practices & Troubleshooting",
+          "description": "Common issues and resolution strategies",
+          "type": "reading",
+          "duration": "20 min",
+          "status": "not_started",
+          "requiredForTier": true,
+          "objectives": [
+            "Diagnose common issues",
+            "Apply best practices",
+            "Escalation procedures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced-ai",
+      "title": "Advanced AI Certification",
+      "description": "Deep expertise in MELP's AI capabilities for specialized selling",
+      "requiredForTier": false,
+      "status": "not_started",
+      "badge": "AI Specialist",
+      "modules": [
+        {
+          "id": "ai-1",
+          "title": "AI Summaries Deep Dive",
+          "description": "Advanced features and customization options",
+          "type": "video",
+          "duration": "30 min",
+          "status": "not_started",
+          "requiredForTier": false,
+          "objectives": [
+            "Customize summary formats",
+            "Configure action item extraction",
+            "Integrate with workflows"
+          ]
+        },
+        {
+          "id": "ai-2",
+          "title": "Translation Advanced Features",
+          "description": "Multi-language support and customization",
+          "type": "video",
+          "duration": "25 min",
+          "status": "not_started",
+          "requiredForTier": false,
+          "objectives": [
+            "Configure language preferences",
+            "Handle technical terminology",
+            "Manage translation quality"
+          ]
+        },
+        {
+          "id": "ai-3",
+          "title": "Search & Knowledge",
+          "description": "AI-powered search and knowledge management",
+          "type": "video",
+          "duration": "20 min",
+          "status": "not_started",
+          "requiredForTier": false,
+          "objectives": [
+            "Use semantic search",
+            "Build knowledge bases",
+            "Configure search settings"
+          ]
+        },
+        {
+          "id": "ai-4",
+          "title": "Responsible AI Positioning",
+          "description": "Communicate AI ethics and governance to customers",
+          "type": "reading",
+          "duration": "15 min",
+          "status": "not_started",
+          "requiredForTier": false,
+          "objectives": [
+            "Explain data handling practices",
+            "Address AI concerns",
+            "Position responsible AI"
+          ]
+        }
+      ]
+    }
+  ],
+  "earnedBadges": [
+    {
+      "id": "badge-sales",
+      "name": "Sales Certified",
+      "earnedDate": "2024-11-15",
+      "expiryDate": "2025-11-15",
+      "track": "Sales Certification"
+    },
+    {
+      "id": "badge-product",
+      "name": "Product Certified",
+      "earnedDate": "2024-12-01",
+      "expiryDate": "2025-12-01",
+      "track": "Product Certification"
+    }
+  ]
+}

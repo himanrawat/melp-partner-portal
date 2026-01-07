@@ -1,0 +1,251 @@
+{
+  "pricing": {
+    "overview": {
+      "title": "MELP Unified Communication Platform",
+      "description": "MELP is sold as a single, unified product. All core features (Chat, Meetings, AI Summaries, Translation) are included. Pricing is based on seats and usage limits.",
+      "pricingModel": "Seat-based with usage limits"
+    },
+    "plans": [
+      {
+        "id": "starter",
+        "name": "Starter",
+        "description": "For small teams getting started",
+        "seatRange": "1-50 users",
+        "highlights": [
+          "All core features included",
+          "Standard AI usage limits",
+          "Community support",
+          "99.9% uptime SLA"
+        ],
+        "usageLimits": {
+          "aiSummaries": "100/month",
+          "translationMinutes": "500/month",
+          "storagePerUser": "10 GB"
+        }
+      },
+      {
+        "id": "professional",
+        "name": "Professional",
+        "description": "For growing teams with advanced needs",
+        "seatRange": "10-500 users",
+        "highlights": [
+          "All core features included",
+          "Higher AI usage limits",
+          "Priority support",
+          "99.95% uptime SLA",
+          "Advanced analytics"
+        ],
+        "usageLimits": {
+          "aiSummaries": "500/month",
+          "translationMinutes": "2,000/month",
+          "storagePerUser": "50 GB"
+        },
+        "recommended": true
+      },
+      {
+        "id": "business",
+        "name": "Business",
+        "description": "For larger organizations",
+        "seatRange": "50-2,000 users",
+        "highlights": [
+          "All core features included",
+          "High AI usage limits",
+          "Dedicated support",
+          "99.99% uptime SLA",
+          "SSO & advanced security",
+          "Custom integrations"
+        ],
+        "usageLimits": {
+          "aiSummaries": "2,000/month",
+          "translationMinutes": "10,000/month",
+          "storagePerUser": "100 GB"
+        }
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "description": "For large enterprises with custom needs",
+        "seatRange": "Unlimited",
+        "highlights": [
+          "All features unlimited",
+          "Custom AI limits",
+          "Dedicated account team",
+          "Custom SLA",
+          "Data residency options",
+          "Custom compliance",
+          "On-premise option"
+        ],
+        "usageLimits": {
+          "aiSummaries": "Custom",
+          "translationMinutes": "Custom",
+          "storagePerUser": "Custom"
+        }
+      }
+    ],
+    "factors": [
+      {
+        "factor": "Seat Count",
+        "description": "More seats typically qualify for volume discounts",
+        "impact": "Lower per-seat price at higher volumes"
+      },
+      {
+        "factor": "Contract Term",
+        "description": "Annual or multi-year commitments receive discounts",
+        "impact": "Up to 20% discount for 3-year terms"
+      },
+      {
+        "factor": "Region",
+        "description": "Pricing may vary by geographic region",
+        "impact": "Some regions have adjusted pricing"
+      },
+      {
+        "factor": "Usage Needs",
+        "description": "Higher usage limits may affect pricing",
+        "impact": "Custom usage can be negotiated"
+      }
+    ]
+  },
+  "discountRules": {
+    "partnerTiers": [
+      {
+        "tier": "Registered",
+        "baseDiscount": "5%",
+        "maxWithoutApproval": "10%",
+        "description": "Entry-level partner discount"
+      },
+      {
+        "tier": "Silver",
+        "baseDiscount": "10%",
+        "maxWithoutApproval": "15%",
+        "description": "Standard partner discount"
+      },
+      {
+        "tier": "Gold",
+        "baseDiscount": "15%",
+        "maxWithoutApproval": "20%",
+        "description": "Premium partner discount"
+      },
+      {
+        "tier": "Platinum",
+        "baseDiscount": "20%",
+        "maxWithoutApproval": "25%",
+        "description": "Elite partner discount"
+      }
+    ],
+    "approvalThresholds": [
+      {
+        "condition": "Discount exceeds tier maximum",
+        "approvalRequired": true,
+        "approver": "Partner Manager",
+        "sla": "24 hours"
+      },
+      {
+        "condition": "Deal value > $100K",
+        "approvalRequired": true,
+        "approver": "Regional Director",
+        "sla": "48 hours"
+      },
+      {
+        "condition": "Multi-year term (3+ years)",
+        "approvalRequired": true,
+        "approver": "Partner Manager",
+        "sla": "24 hours"
+      },
+      {
+        "condition": "Custom terms or SLA",
+        "approvalRequired": true,
+        "approver": "Legal Review",
+        "sla": "3-5 business days"
+      }
+    ],
+    "currentPartnerTier": "Gold"
+  },
+  "quotes": [
+    {
+      "id": "Q-2025-001",
+      "dealId": "D-2024-089",
+      "customer": "Acme Corporation",
+      "plan": "Business",
+      "seats": 250,
+      "term": "Annual",
+      "region": "North America",
+      "totalValue": 75000,
+      "discountApplied": "18%",
+      "status": "approved",
+      "createdDate": "2025-01-02",
+      "validUntil": "2025-02-01",
+      "submittedBy": "John Smith",
+      "approvedBy": "Sarah Johnson"
+    },
+    {
+      "id": "Q-2025-002",
+      "dealId": "D-2024-092",
+      "customer": "TechStart Inc",
+      "plan": "Professional",
+      "seats": 75,
+      "term": "Annual",
+      "region": "North America",
+      "totalValue": 18000,
+      "discountApplied": "15%",
+      "status": "sent",
+      "createdDate": "2025-01-03",
+      "validUntil": "2025-02-02",
+      "submittedBy": "John Smith",
+      "sentDate": "2025-01-04"
+    },
+    {
+      "id": "Q-2025-003",
+      "dealId": "D-2024-095",
+      "customer": "GlobalHealth Systems",
+      "plan": "Enterprise",
+      "seats": 1500,
+      "term": "3-Year",
+      "region": "EMEA",
+      "totalValue": 450000,
+      "discountApplied": "22%",
+      "status": "pending_approval",
+      "createdDate": "2025-01-05",
+      "validUntil": "2025-02-04",
+      "submittedBy": "John Smith",
+      "pendingApprover": "Regional Director"
+    },
+    {
+      "id": "Q-2024-089",
+      "dealId": "D-2024-078",
+      "customer": "DataFlow Analytics",
+      "plan": "Business",
+      "seats": 120,
+      "term": "Annual",
+      "region": "APAC",
+      "totalValue": 32000,
+      "discountApplied": "15%",
+      "status": "expired",
+      "createdDate": "2024-11-15",
+      "validUntil": "2024-12-15",
+      "submittedBy": "John Smith"
+    },
+    {
+      "id": "Q-2024-091",
+      "dealId": "D-2024-082",
+      "customer": "RetailPro Solutions",
+      "plan": "Professional",
+      "seats": 50,
+      "term": "Annual",
+      "region": "North America",
+      "totalValue": 12500,
+      "discountApplied": "12%",
+      "status": "draft",
+      "createdDate": "2025-01-06",
+      "submittedBy": "John Smith"
+    }
+  ],
+  "quoteStatusDefinitions": {
+    "draft": "Quote created but not yet submitted for approval",
+    "pending_approval": "Awaiting internal approval (discount or deal value threshold)",
+    "approved": "Quote approved and ready to send to customer",
+    "sent": "Quote delivered to customer, awaiting response",
+    "accepted": "Customer has accepted the quote",
+    "expired": "Quote validity period has ended",
+    "rejected": "Quote was declined by approver or customer"
+  }
+}

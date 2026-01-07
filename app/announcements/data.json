@@ -1,0 +1,185 @@
+{
+  "pinnedAnnouncements": [
+    {
+      "id": "ann-pinned-001",
+      "title": "Q1 2025 Partner Incentive Program",
+      "category": "program",
+      "date": "2025-01-02",
+      "isPinned": true,
+      "summary": "Double accelerators on AI add-on deals through March 31, 2025",
+      "content": "We're excited to announce our Q1 2025 Partner Incentive Program! For all deals closed between January 1 - March 31, 2025, you'll earn 2x accelerators on any deal that includes the AI add-on package. This is a great opportunity to boost your commissions while helping customers unlock the full power of MELP's AI capabilities.",
+      "actionRequired": true,
+      "actionText": "Review incentive details in your Revenue dashboard",
+      "author": "Partner Program Team"
+    },
+    {
+      "id": "ann-pinned-002",
+      "title": "Enterprise Tier Pricing Update - Effective Feb 1",
+      "category": "program",
+      "date": "2025-01-15",
+      "isPinned": true,
+      "summary": "Important pricing changes for Enterprise tier deals",
+      "content": "Starting February 1, 2025, Enterprise tier pricing will be adjusted to reflect expanded features. Existing quotes remain valid until their expiry date. New quotes generated after Feb 1 will reflect updated pricing. Contact your Partner Manager if you have pending Enterprise deals that need expedited processing.",
+      "actionRequired": true,
+      "actionText": "Review updated pricing in Quotes & Pricing",
+      "author": "Partner Program Team",
+      "effectiveDate": "2025-02-01"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-2025-015",
+      "title": "AI Meeting Summaries Now Support 12 Languages",
+      "category": "product",
+      "date": "2025-01-06",
+      "summary": "Multilingual AI summaries are now available for global teams",
+      "content": "AI Meeting Summaries now support 12 languages including Spanish, French, German, Japanese, and Mandarin. This is a significant upsell opportunity for customers with international teams.",
+      "whatChanged": "AI summaries can now be generated in the participant's preferred language automatically",
+      "whyItMatters": "Global teams can now receive meeting summaries in their native language, improving adoption and productivity",
+      "whatToSay": "Highlight this feature for any prospect with multi-regional teams. It's a strong differentiator against competitors.",
+      "appliesTo": ["Professional", "Business", "Enterprise"],
+      "author": "Product Team",
+      "tags": ["AI", "International", "Upsell Opportunity"]
+    },
+    {
+      "id": "ann-2025-014",
+      "title": "New Healthcare Industry Pitch Deck Available",
+      "category": "sales",
+      "date": "2025-01-05",
+      "summary": "HIPAA-focused sales materials now in Resources",
+      "content": "We've added a comprehensive Healthcare industry pitch deck to the Resources page. It includes HIPAA compliance positioning, healthcare-specific use cases, and customer testimonials from healthcare organizations.",
+      "whatToSay": "Use this deck for any healthcare prospect. It addresses their top concerns around compliance and patient data protection.",
+      "appliesTo": ["All Plans"],
+      "author": "Sales Enablement",
+      "resourceLink": "/enablement",
+      "tags": ["Healthcare", "Pitch Deck", "Compliance"]
+    },
+    {
+      "id": "ann-2025-013",
+      "title": "Partner Certification Expiry Reminder",
+      "category": "program",
+      "date": "2025-01-04",
+      "summary": "Check your certification expiry dates",
+      "content": "Partner certifications are valid for 12 months from completion. If your certifications are expiring soon, please complete the renewal modules to maintain your tier status. Expired certifications may affect your partner tier and discount levels.",
+      "actionRequired": true,
+      "actionText": "Check your Training page for expiry dates",
+      "author": "Partner Success Team",
+      "tags": ["Certification", "Tier", "Action Required"]
+    },
+    {
+      "id": "ann-2025-012",
+      "title": "January Product Webinar: Advanced AI Features",
+      "category": "event",
+      "date": "2025-01-03",
+      "summary": "Deep dive into AI capabilities - January 18, 2025",
+      "content": "Join us for an exclusive partner webinar covering advanced AI features including custom summary templates, action item extraction, and integration with workflow tools. This is perfect preparation for selling to enterprise customers.",
+      "eventDate": "2025-01-18",
+      "eventTime": "11:00 AM EST",
+      "registrationLink": "#",
+      "author": "Partner Enablement",
+      "tags": ["Webinar", "AI", "Training"]
+    },
+    {
+      "id": "ann-2025-011",
+      "title": "Mobile App 2.0 Released",
+      "category": "product",
+      "date": "2025-01-02",
+      "summary": "Completely redesigned mobile experience now available",
+      "content": "MELP Mobile App 2.0 is now available on iOS and Android. The new version features a completely redesigned interface, offline message access, and improved video call quality on mobile networks.",
+      "whatChanged": "New mobile app with redesigned UI, offline support, and better video performance",
+      "whyItMatters": "Mobile workers can now stay connected even with poor connectivity. Great for field teams and remote workers.",
+      "whatToSay": "If prospects mention mobile workforce or remote teams, highlight the new mobile app capabilities.",
+      "appliesTo": ["All Plans"],
+      "author": "Product Team",
+      "tags": ["Mobile", "New Feature"]
+    },
+    {
+      "id": "ann-2025-010",
+      "title": "Deal Registration Protection Extended to 120 Days",
+      "category": "program",
+      "date": "2024-12-28",
+      "summary": "More time to close your registered deals",
+      "content": "Effective January 1, 2025, deal registration protection has been extended from 90 days to 120 days. This gives you more time to work complex enterprise deals without worrying about protection expiry.",
+      "actionRequired": false,
+      "author": "Partner Program Team",
+      "tags": ["Deal Registration", "Policy Update"]
+    },
+    {
+      "id": "ann-2025-009",
+      "title": "Case Study: GlobalTech Saves 40% on Meeting Time",
+      "category": "sales",
+      "date": "2024-12-20",
+      "summary": "New enterprise case study available",
+      "content": "A new case study featuring GlobalTech (5,000+ employees) is now available. They achieved a 40% reduction in meeting time using AI summaries and async video messaging. Great proof point for enterprise prospects.",
+      "resourceLink": "/enablement",
+      "author": "Marketing Team",
+      "tags": ["Case Study", "Enterprise", "ROI"]
+    },
+    {
+      "id": "ann-2025-008",
+      "title": "Year-End Commission Statements Available",
+      "category": "program",
+      "date": "2024-12-18",
+      "summary": "2024 commission statements ready for download",
+      "content": "Your 2024 year-end commission statements are now available in the Revenue section. You can download detailed transaction reports for your records. 1099 forms will be available by January 31, 2025.",
+      "actionRequired": false,
+      "author": "Finance Team",
+      "tags": ["Commission", "Tax", "Year-End"]
+    },
+    {
+      "id": "ann-2025-007",
+      "title": "SOC 2 Type II Certification Renewed",
+      "category": "product",
+      "date": "2024-12-15",
+      "summary": "Updated compliance documentation available",
+      "content": "MELP has successfully renewed our SOC 2 Type II certification. Updated compliance documentation and audit reports are available in the Resources section for sharing with security-conscious prospects.",
+      "whyItMatters": "This is essential for enterprise and regulated industry prospects who require proof of security practices.",
+      "whatToSay": "For any prospect asking about security audits, we have fresh SOC 2 Type II certification.",
+      "resourceLink": "/enablement",
+      "author": "Security Team",
+      "tags": ["Security", "Compliance", "SOC 2"]
+    },
+    {
+      "id": "ann-2025-006",
+      "title": "Partner Summit 2025 - Save the Date",
+      "category": "event",
+      "date": "2024-12-10",
+      "summary": "Annual Partner Summit - March 15-17, 2025 in Austin, TX",
+      "content": "Mark your calendars for Partner Summit 2025! Join us in Austin, TX for three days of training, networking, and exclusive product previews. Early bird registration opens January 15.",
+      "eventDate": "2025-03-15",
+      "eventLocation": "Austin, TX",
+      "author": "Partner Program Team",
+      "tags": ["Event", "Summit", "Networking"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "product",
+      "name": "Product Updates",
+      "description": "New features, improvements, and platform changes",
+      "icon": "sparkles",
+      "color": "purple"
+    },
+    {
+      "id": "program",
+      "name": "Program Updates",
+      "description": "Partner program policies, tiers, and commission changes",
+      "icon": "shield",
+      "color": "blue"
+    },
+    {
+      "id": "sales",
+      "name": "Sales & Marketing",
+      "description": "New materials, case studies, and campaigns",
+      "icon": "megaphone",
+      "color": "green"
+    },
+    {
+      "id": "event",
+      "name": "Events & Webinars",
+      "description": "Training sessions, webinars, and partner events",
+      "icon": "calendar",
+      "color": "amber"
+    }
+  ]
+}

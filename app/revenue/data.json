@@ -1,0 +1,188 @@
+{
+  "summary": {
+    "earnedThisMonth": 12450,
+    "pendingCommissions": 8750,
+    "paidToDate": 87500,
+    "forecastedCommissions": 15200,
+    "currency": "USD"
+  },
+  "commissions": [
+    {
+      "id": "COM-2025-001",
+      "dealId": "D-2024-089",
+      "customer": "Acme Corporation",
+      "dealValue": 75000,
+      "commissionRate": "15%",
+      "earnedAmount": 11250,
+      "status": "approved",
+      "dealCloseDate": "2025-01-02",
+      "expectedPayoutDate": "2025-02-15"
+    },
+    {
+      "id": "COM-2025-002",
+      "dealId": "D-2024-085",
+      "customer": "TechVenture Labs",
+      "dealValue": 32000,
+      "commissionRate": "15%",
+      "earnedAmount": 4800,
+      "status": "paid",
+      "dealCloseDate": "2024-12-15",
+      "paidDate": "2025-01-10",
+      "payoutReference": "PAY-2025-0115"
+    },
+    {
+      "id": "COM-2025-003",
+      "dealId": "D-2024-092",
+      "customer": "TechStart Inc",
+      "dealValue": 18000,
+      "commissionRate": "15%",
+      "earnedAmount": 2700,
+      "status": "pending",
+      "dealCloseDate": "2025-01-03",
+      "notes": "Awaiting customer payment confirmation"
+    },
+    {
+      "id": "COM-2025-004",
+      "dealId": "D-2024-095",
+      "customer": "GlobalHealth Systems",
+      "dealValue": 450000,
+      "commissionRate": "12%",
+      "earnedAmount": 54000,
+      "status": "pending",
+      "dealCloseDate": "2025-01-05",
+      "notes": "Large deal - awaiting finance validation"
+    },
+    {
+      "id": "COM-2024-089",
+      "dealId": "D-2024-078",
+      "customer": "DataFlow Analytics",
+      "dealValue": 32000,
+      "commissionRate": "15%",
+      "earnedAmount": 4800,
+      "status": "paid",
+      "dealCloseDate": "2024-11-20",
+      "paidDate": "2024-12-15",
+      "payoutReference": "PAY-2024-1215"
+    },
+    {
+      "id": "COM-2024-088",
+      "dealId": "D-2024-075",
+      "customer": "FinServ Group",
+      "dealValue": 65000,
+      "commissionRate": "15%",
+      "earnedAmount": 9750,
+      "status": "paid",
+      "dealCloseDate": "2024-11-10",
+      "paidDate": "2024-12-15",
+      "payoutReference": "PAY-2024-1215"
+    },
+    {
+      "id": "COM-2024-087",
+      "dealId": "D-2024-072",
+      "customer": "RetailMax Solutions",
+      "dealValue": 28000,
+      "commissionRate": "15%",
+      "earnedAmount": 4200,
+      "status": "paid",
+      "dealCloseDate": "2024-10-25",
+      "paidDate": "2024-11-15",
+      "payoutReference": "PAY-2024-1115"
+    },
+    {
+      "id": "COM-2024-086",
+      "dealId": "D-2024-068",
+      "customer": "CloudFirst Inc",
+      "dealValue": 45000,
+      "commissionRate": "15%",
+      "earnedAmount": 6750,
+      "status": "paid",
+      "dealCloseDate": "2024-10-15",
+      "paidDate": "2024-11-15",
+      "payoutReference": "PAY-2024-1115"
+    }
+  ],
+  "payouts": [
+    {
+      "id": "PAY-2025-0115",
+      "date": "2025-01-10",
+      "amount": 4800,
+      "status": "completed",
+      "method": "Bank Transfer",
+      "reference": "TRF-20250110-4800",
+      "commissionsIncluded": ["COM-2025-002"]
+    },
+    {
+      "id": "PAY-2024-1215",
+      "date": "2024-12-15",
+      "amount": 14550,
+      "status": "completed",
+      "method": "Bank Transfer",
+      "reference": "TRF-20241215-14550",
+      "commissionsIncluded": ["COM-2024-089", "COM-2024-088"]
+    },
+    {
+      "id": "PAY-2024-1115",
+      "date": "2024-11-15",
+      "amount": 10950,
+      "status": "completed",
+      "method": "Bank Transfer",
+      "reference": "TRF-20241115-10950",
+      "commissionsIncluded": ["COM-2024-087", "COM-2024-086"]
+    },
+    {
+      "id": "PAY-2025-0215",
+      "date": "2025-02-15",
+      "amount": 11250,
+      "status": "scheduled",
+      "method": "Bank Transfer",
+      "commissionsIncluded": ["COM-2025-001"]
+    }
+  ],
+  "payoutSchedule": {
+    "frequency": "Monthly",
+    "payoutDay": "15th of each month",
+    "minimumPayout": 500,
+    "currency": "USD",
+    "method": "Bank Transfer",
+    "nextPayoutDate": "2025-02-15"
+  },
+  "taxDocuments": [
+    {
+      "id": "TAX-2024-W9",
+      "name": "W-9 Form (2024)",
+      "type": "W-9",
+      "uploadDate": "2024-01-15",
+      "status": "current",
+      "expiryDate": null
+    },
+    {
+      "id": "TAX-2024-1099",
+      "name": "1099-NEC (2024)",
+      "type": "1099",
+      "uploadDate": "2025-01-20",
+      "status": "available",
+      "year": 2024
+    },
+    {
+      "id": "TAX-2023-1099",
+      "name": "1099-NEC (2023)",
+      "type": "1099",
+      "uploadDate": "2024-01-25",
+      "status": "available",
+      "year": 2023
+    }
+  ],
+  "statusDefinitions": {
+    "pending": "Deal closed, awaiting payment validation from customer",
+    "approved": "Commission confirmed, scheduled for next payout",
+    "paid": "Commission has been transferred to your account"
+  },
+  "monthlyEarnings": [
+    { "month": "Aug 2024", "amount": 8200 },
+    { "month": "Sep 2024", "amount": 6500 },
+    { "month": "Oct 2024", "amount": 10950 },
+    { "month": "Nov 2024", "amount": 14550 },
+    { "month": "Dec 2024", "amount": 4800 },
+    { "month": "Jan 2025", "amount": 12450 }
+  ]
+}

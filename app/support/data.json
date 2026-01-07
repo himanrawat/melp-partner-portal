@@ -1,0 +1,254 @@
+{
+  "sla": {
+    "businessHours": "Monday - Friday, 9:00 AM - 6:00 PM (Your Local Time)",
+    "responseTimesByCategory": [
+      {
+        "category": "Deal Support",
+        "priority": "Normal",
+        "responseTime": "4 business hours",
+        "resolutionTime": "1-2 business days"
+      },
+      {
+        "category": "Deal Support",
+        "priority": "High",
+        "responseTime": "2 business hours",
+        "resolutionTime": "Same business day"
+      },
+      {
+        "category": "Technical Support",
+        "priority": "Normal",
+        "responseTime": "8 business hours",
+        "resolutionTime": "2-3 business days"
+      },
+      {
+        "category": "Technical Support",
+        "priority": "High",
+        "responseTime": "4 business hours",
+        "resolutionTime": "1 business day"
+      },
+      {
+        "category": "Billing & Commission",
+        "priority": "Normal",
+        "responseTime": "1 business day",
+        "resolutionTime": "3-5 business days"
+      },
+      {
+        "category": "Billing & Commission",
+        "priority": "High",
+        "responseTime": "4 business hours",
+        "resolutionTime": "1-2 business days"
+      },
+      {
+        "category": "Partner Program / Portal Help",
+        "priority": "Normal",
+        "responseTime": "1 business day",
+        "resolutionTime": "2-3 business days"
+      },
+      {
+        "category": "Enablement Content Request",
+        "priority": "Normal",
+        "responseTime": "2 business days",
+        "resolutionTime": "5-7 business days"
+      }
+    ],
+    "escalation": "If your ticket is not updated within the SLA, reply to the ticket email or contact your Partner Manager directly."
+  },
+  "tickets": [
+    {
+      "id": "TKT-2025-0042",
+      "category": "Deal Support",
+      "subject": "Deal conflict with another partner on Acme Corp",
+      "description": "Another partner has registered Acme Corporation but we have an existing relationship. Need conflict resolution.",
+      "priority": "High",
+      "status": "in_progress",
+      "relatedDealId": "D-2024-089",
+      "relatedCustomer": "Acme Corporation",
+      "createdDate": "2025-01-05T10:30:00Z",
+      "lastUpdated": "2025-01-06T14:20:00Z",
+      "assignedTo": "Sarah Johnson",
+      "updates": [
+        {
+          "date": "2025-01-05T11:00:00Z",
+          "author": "System",
+          "message": "Ticket assigned to Sarah Johnson"
+        },
+        {
+          "date": "2025-01-06T14:20:00Z",
+          "author": "Sarah Johnson",
+          "message": "Reviewing deal registration timestamps and relationship history. Will update by EOD."
+        }
+      ]
+    },
+    {
+      "id": "TKT-2025-0041",
+      "category": "Technical Support",
+      "subject": "SSO integration failing for GlobalHealth",
+      "description": "Customer's Azure AD SSO integration is returning SAML assertion errors. Need technical assistance.",
+      "priority": "High",
+      "status": "waiting",
+      "relatedDealId": "D-2024-095",
+      "relatedCustomer": "GlobalHealth Systems",
+      "createdDate": "2025-01-04T09:15:00Z",
+      "lastUpdated": "2025-01-05T16:30:00Z",
+      "assignedTo": "Mike Chen",
+      "updates": [
+        {
+          "date": "2025-01-04T10:00:00Z",
+          "author": "Mike Chen",
+          "message": "Looking into the SAML configuration. Can you share the Azure AD app registration settings?"
+        },
+        {
+          "date": "2025-01-05T16:30:00Z",
+          "author": "Mike Chen",
+          "message": "Waiting for customer to provide Azure AD configuration screenshots."
+        }
+      ]
+    },
+    {
+      "id": "TKT-2025-0038",
+      "category": "Billing & Commission",
+      "subject": "Commission not showing for TechVenture deal",
+      "description": "Deal D-2024-085 closed on Dec 15 but commission is not appearing in my revenue dashboard.",
+      "priority": "Normal",
+      "status": "resolved",
+      "relatedDealId": "D-2024-085",
+      "relatedCustomer": "TechVenture Labs",
+      "createdDate": "2025-01-02T14:00:00Z",
+      "lastUpdated": "2025-01-03T11:30:00Z",
+      "resolvedDate": "2025-01-03T11:30:00Z",
+      "assignedTo": "Finance Team",
+      "updates": [
+        {
+          "date": "2025-01-02T15:00:00Z",
+          "author": "Finance Team",
+          "message": "Investigating the commission record for this deal."
+        },
+        {
+          "date": "2025-01-03T11:30:00Z",
+          "author": "Finance Team",
+          "message": "Commission has been processed and is now visible in your Revenue dashboard. The delay was due to customer payment confirmation."
+        }
+      ]
+    },
+    {
+      "id": "TKT-2025-0035",
+      "category": "Partner Program / Portal Help",
+      "subject": "How to check my tier progress?",
+      "description": "I want to know how close I am to reaching Platinum tier. Where can I see this?",
+      "priority": "Normal",
+      "status": "resolved",
+      "createdDate": "2024-12-28T09:00:00Z",
+      "lastUpdated": "2024-12-28T10:15:00Z",
+      "resolvedDate": "2024-12-28T10:15:00Z",
+      "assignedTo": "Partner Success",
+      "updates": [
+        {
+          "date": "2024-12-28T10:15:00Z",
+          "author": "Partner Success",
+          "message": "You can view your tier progress on the Dashboard page. The 'Partner Tier' card shows your current status and requirements for the next tier. For detailed criteria, check your Training page - completing required certifications is part of tier advancement."
+        }
+      ]
+    },
+    {
+      "id": "TKT-2025-0033",
+      "category": "Enablement Content Request",
+      "subject": "Need manufacturing industry pitch deck",
+      "description": "I have several manufacturing prospects. Is there an industry-specific pitch deck available?",
+      "priority": "Normal",
+      "status": "open",
+      "createdDate": "2025-01-06T08:00:00Z",
+      "lastUpdated": "2025-01-06T08:00:00Z",
+      "updates": []
+    }
+  ],
+  "knowledgeBase": [
+    {
+      "id": "kb-001",
+      "title": "Deal Registration Rules",
+      "category": "Deals",
+      "summary": "How deal registration works, protection periods, and conflict resolution",
+      "content": "Deal registration protects your opportunity for 90 days from registration date. To register a deal, you must have a qualified opportunity with customer engagement. Conflicts are resolved based on registration timestamp and documented customer relationship.",
+      "relatedLinks": ["Deals Page", "Quote Request"]
+    },
+    {
+      "id": "kb-002",
+      "title": "Deal Conflict Resolution Process",
+      "category": "Deals",
+      "summary": "What happens when two partners register the same customer",
+      "content": "When a conflict occurs, our Partner team reviews: 1) Registration timestamps, 2) Documented customer engagement history, 3) Customer preference if applicable. Resolution typically takes 2-3 business days. You'll be notified via email and ticket update.",
+      "relatedLinks": ["Deal Support Ticket"]
+    },
+    {
+      "id": "kb-003",
+      "title": "Partner Discount Guidelines",
+      "category": "Pricing",
+      "summary": "Understanding your discount levels and approval requirements",
+      "content": "Your discount authority is based on your partner tier. Gold partners can apply up to 20% without approval. Discounts above your threshold require Partner Manager approval (24-hour SLA). See the Quotes & Pricing page for detailed rules.",
+      "relatedLinks": ["Quotes & Pricing Page"]
+    },
+    {
+      "id": "kb-004",
+      "title": "Commission Payout Schedule",
+      "category": "Revenue",
+      "summary": "When and how you get paid",
+      "content": "Commissions are paid monthly on the 15th. A commission moves to 'Approved' status after customer payment is confirmed. Approved commissions are included in the next payout cycle. Minimum payout threshold is $500.",
+      "relatedLinks": ["Revenue Page"]
+    },
+    {
+      "id": "kb-005",
+      "title": "Commission Calculation",
+      "category": "Revenue",
+      "summary": "How your commission is calculated",
+      "content": "Commission is calculated as a percentage of deal value based on your partner tier: Registered (5%), Silver (10%), Gold (15%), Platinum (20%). Large deals ($100K+) may have adjusted rates. See your deal details for specific rates.",
+      "relatedLinks": ["Revenue Page", "Deals Page"]
+    },
+    {
+      "id": "kb-006",
+      "title": "SSO Setup Common Issues",
+      "category": "Technical",
+      "summary": "Troubleshooting SAML and OIDC integration",
+      "content": "Common SSO issues: 1) Incorrect ACS URL - ensure it matches exactly, 2) Certificate expiry - check IdP certificate validity, 3) Attribute mapping - user email must be in correct format. For detailed setup, see the Technical Implementation guide in Resources.",
+      "relatedLinks": ["Resources Page", "Technical Support Ticket"]
+    },
+    {
+      "id": "kb-007",
+      "title": "Tier Advancement Requirements",
+      "category": "Program",
+      "summary": "What you need to reach the next partner tier",
+      "content": "Tier advancement is based on: 1) Revenue targets (varies by tier), 2) Required certifications (Sales + Product for Silver, add Implementation for Gold), 3) Customer satisfaction scores. Check your Training page for certification progress.",
+      "relatedLinks": ["Training Page", "Dashboard"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "deal-support",
+      "name": "Deal Support",
+      "description": "Pricing, approvals, conflicts, deal registration issues",
+      "icon": "briefcase"
+    },
+    {
+      "id": "technical-support",
+      "name": "Technical Support",
+      "description": "Implementation blockers, integration issues, setup help",
+      "icon": "code"
+    },
+    {
+      "id": "billing-commission",
+      "name": "Billing & Commission",
+      "description": "Commission questions, payout issues, invoice help",
+      "icon": "coin"
+    },
+    {
+      "id": "partner-program",
+      "name": "Partner Program / Portal Help",
+      "description": "Tier questions, portal navigation, program rules",
+      "icon": "help"
+    },
+    {
+      "id": "enablement-request",
+      "name": "Enablement Content Request",
+      "description": "Request new sales materials, training content, or resources",
+      "icon": "book"
+    }
+  ]
+}

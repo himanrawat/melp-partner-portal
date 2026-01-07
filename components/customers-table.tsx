@@ -85,8 +85,6 @@ export const customerSchema = z.object({
   region: z.string(),
   plan: z.string(),
   seats: z.number(),
-  seatsUsed: z.number(),
-  products: z.array(z.string()),
   contractStart: z.string(),
   contractEnd: z.string(),
   renewalType: z.string(),
@@ -295,8 +293,7 @@ export function CustomersTable({ data: initialData }: CustomersTableProps) {
       header: "Seats",
       cell: ({ row }) => (
         <div className="text-sm">
-          <span className="font-medium">{row.original.seatsUsed}</span>
-          <span className="text-muted-foreground"> / {row.original.seats}</span>
+          <span className="font-medium">{row.original.seats}</span>
         </div>
       ),
     },
