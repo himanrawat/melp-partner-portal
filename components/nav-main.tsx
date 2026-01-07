@@ -10,6 +10,7 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { cn } from "@/lib/utils";
 
 export function NavMain({
 	items,
@@ -28,10 +29,15 @@ export function NavMain({
 			<SidebarGroupLabel>Navigation</SidebarGroupLabel>
 			<SidebarMenu>
 				{items.map((item) => {
-					const isActive = pathname === item.url || pathname.startsWith(item.url + "/");
+					const isActive =
+						pathname === item.url || pathname.startsWith(item.url + "/");
 					return (
 						<SidebarMenuItem key={item.title}>
-							<SidebarMenuButton tooltip={item.title} asChild isActive={isActive}>
+							<SidebarMenuButton
+								tooltip={item.title}
+								asChild
+								isActive={isActive}
+							>
 								<a href={item.url}>
 									{item.icon && <item.icon className="size-5" />}
 									<span>{item.title}</span>
