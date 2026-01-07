@@ -136,11 +136,11 @@ export function NavUser({
             )}
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push("/settings?tab=account")}>
                 <IconUserCircle />
                 Account
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push("/settings?tab=notifications")}>
                 <IconNotification />
                 Notifications
               </DropdownMenuItem>
